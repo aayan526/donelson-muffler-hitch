@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" width="540" height="120">
+  <!-- Transparent background - no background rectangle -->
+
+  <!-- LEFT EMBLEM: Interlocking Performance Muffler & Hitch Receiver -->
+  <g transform="translate(10, 8)">
+    <!-- Outer Shield / Hitch Frame Accent in Amber Gold -->
+    <path 
+      d="M20 12 L84 12 C96 12 104 22 104 36 L104 68 C104 82 96 92 84 92 L20 92 C8 92 0 82 0 68 L0 36 C0 22 8 12 20 12 Z" 
+      fill="#F5A524" 
+    />
+    
+    <!-- Inner Cutout / Frame Core -->
+    <path 
+      d="M24 20 L80 20 C88 20 94 28 94 38 L94 66 C94 76 88 84 80 84 L24 84 C16 84 10 76 10 66 L10 38 C10 28 16 20 24 20 Z" 
+      fill="#0A0A0B" 
+    />
+
+    <!-- Heavy-Duty Hitch Receiver Core (Square tube + Hitch Pin) -->
+    <rect x="22" y="32" width="40" height="40" rx="6" fill="#F5A524"/>
+    <rect x="28" y="38" width="28" height="28" rx="4" fill="#0A0A0B"/>
+    <!-- Hitch Pin Hole -->
+    <circle cx="42" cy="52" r="6" fill="#FFB93D"/>
+    <circle cx="42" cy="52" r="3" fill="#0A0A0B"/>
+
+    <!-- Dual Performance Muffler Exhaust Pipes & Slash Tips -->
+    <!-- Top Exhaust Pipe -->
+    <path d="M62 36 L86 36 L98 28 L98 42 L86 44 L62 44 Z" fill="#FFB93D"/>
+    <ellipse cx="98" cy="35" rx="3.5" ry="7" fill="#F5A524"/>
+
+    <!-- Bottom Exhaust Pipe -->
+    <path d="M62 60 L86 60 L98 52 L98 66 L86 68 L62 68 Z" fill="#FFB93D"/>
+    <ellipse cx="98" cy="59" rx="3.5" ry="7" fill="#F5A524"/>
+
+    <!-- Muffler Expansion Chamber Ribs -->
+    <rect x="14" y="27" width="5" height="50" rx="2" fill="#FFB93D"/>
+    <rect x="70" y="27" width="4" height="50" rx="2" fill="#FFB93D"/>
+
+    <!-- Dynamic Flow Speed Accents -->
+    <path d="M4 42 L0 42 L0 62 L4 62 Z" fill="#FFB93D"/>
+  </g>
+
+  <!-- RIGHT TYPOGRAPHY: Brand Wordmark -->
+  <!-- Primary Brand: DONELSON -->
+  <text 
+    x="132" 
+    y="46" 
+    fill="#F5A524" 
+    font-family="'Raleway', 'Montserrat', -apple-system, sans-serif" 
+    font-size="40" 
+    font-weight="900" 
+    letter-spacing="3"
+  >DONELSON</text>
+
+  <!-- Specialty Line: MUFFLER & HITCH -->
+  <text 
+    x="134" 
+    y="78" 
+    fill="#FFB93D" 
+    font-family="'Raleway', 'Montserrat', -apple-system, sans-serif" 
+    font-size="18" 
+    font-weight="800" 
+    letter-spacing="5"
+  >MUFFLER &amp; HITCH</text>
+
+  <!-- Divider Line -->
+  <line x1="134" y1="88" x2="495" y2="88" stroke="#F5A524" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Subtitle Tag: NASHVILLE · SINCE 1984 -->
+  <text 
+    x="134" 
+    y="105" 
+    fill="#A1A1AA" 
+    font-family="'Raleway', 'Montserrat', -apple-system, sans-serif" 
+    font-size="11.5" 
+    font-weight="700" 
+    letter-spacing="3.5"
+  >NASHVILLE, TN · EXHAUST &amp; TOWING SPECIALISTS</text>
+</svg>

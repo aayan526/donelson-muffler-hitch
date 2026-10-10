@@ -1,0 +1,6 @@
+{
+  "name": "Donelson Muffler & Hitch",
+  "description": "Modern auto repair website concept for Donelson Muffler & Hitch in Nashville, TN. Specializing in custom exhaust, muffler repair, precision brake service, and heavy-duty hitch installations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

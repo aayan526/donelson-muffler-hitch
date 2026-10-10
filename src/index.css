@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    font-family: 'Raleway', sans-serif !important;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    background-color: #0A0A0B;
+    color: #F5F5F4;
+    font-family: 'Raleway', sans-serif;
+  }
+  
+  body {
+    background-color: #0A0A0B;
+    color: #F5F5F4;
+    font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
+  }
+}
+
+/* Carbon fibre / diagonal premium pattern */
+.carbon-pattern {
+  background-color: #0A0A0B;
+  background-image: 
+    linear-gradient(45deg, rgba(245, 165, 36, 0.03) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(245, 165, 36, 0.03) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, rgba(245, 165, 36, 0.03) 75%),
+    linear-gradient(-45deg, transparent 75%, rgba(245, 165, 36, 0.03) 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+}
+
+.diagonal-mesh {
+  background-image: repeating-linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 12px
+  );
+}
+
+.amber-glow {
+  box-shadow: 0 0 40px -10px rgba(245, 165, 36, 0.25);
+}
+
+.amber-glow-strong {
+  box-shadow: 0 0 50px -5px rgba(245, 165, 36, 0.4);
+}
+
+/* Card lift and hover transitions */
+.card-lift {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              border-color 0.3s cubic-bezier(0.16, 1, 0.3, 1), 
+              box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-lift:hover {
+  transform: translateY(-4px);
+  border-color: rgba(245, 165, 36, 0.5);
+  box-shadow: 0 12px 30px -10px rgba(245, 165, 36, 0.2);
+}
+
+/* Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
