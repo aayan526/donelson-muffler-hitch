@@ -102,7 +102,19 @@ export const StatsBar: React.FC = () => {
       observer.observe(containerRef.current);
     }
 
-    return () => observer.disconnect();
+    // Safety net: start counters if the observer misfires (some mobile browsers).
+    const fallback = window.setTimeout(() => {
+      const el = containerRef.current;
+      if (el && !hasAnimated) {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) setHasAnimated(true);
+      }
+    }, 3000);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, [hasAnimated]);
 
   return (

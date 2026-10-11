@@ -27,7 +27,20 @@ export const Testimonials: React.FC = () => {
       observer.observe(sectionRef.current);
     }
 
-    return () => observer.disconnect();
+    // Safety net: reveal if the observer misfires (some mobile browsers),
+    // so reviews can never stay invisible.
+    const fallback = window.setTimeout(() => {
+      const el = sectionRef.current;
+      if (el) {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) setIsVisible(true);
+      }
+    }, 3000);
+
+    return () => {
+      observer.disconnect();
+      window.clearTimeout(fallback);
+    };
   }, []);
 
   const reviews: Review[] = [
